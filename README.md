@@ -1,3 +1,5 @@
+docker run -p 6379:6379 redis
+
 mvnw install
 java -jar -Dspring.profiles.active=deploy-local -DREDIS_HOST=localhost -DREDIS_PORT=6379 -DDATA_INPUT_FOLDER=C:/desenv/input/ -DDATA_OUTPUT_FOLDER=C:/desenv/output/ sales-report-0.0.1-SNAPSHOT.jar
 
