@@ -49,7 +49,7 @@ public class FileToJobTransformer implements ApplicationContextAware {
 
 			return request;
 		} else {
-			logger.error("processamento descartado "+aFile);
+			logger.debug("processamento descartado "+aFile);
 			return null;
 		}
 	}
